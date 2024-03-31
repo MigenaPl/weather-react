@@ -176,7 +176,10 @@ export default function Weather(props) {
           <i className="fa-solid fa-location-dot fa-xl location-icon"></i>
         </button>
       </div>
-      <footer>Coded by Migena Plenishti</footer>
+      <footer>
+        Open-source <a href="https://github.com/MigenaPl/weather-react">code</a>
+        . Coded by Migena Plenishti
+      </footer>
     </div>
   );
 }
