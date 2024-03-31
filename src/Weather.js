@@ -23,43 +23,48 @@ export default function Weather(props) {
   return (
     <div className="Weather-app">
       <div className="circle">
-        <div className="container cont-one">
+        <div className="container">
           <div className="row">
             <p className="current" id="current">
               Date&Time
             </p>
-            <br />
-            <h2 id="current-city-name">{city}</h2>
           </div>
-          <div className="row">
-            <div className="col deg-area">
-              <h1 id="main-deg" className="main-deg">
-                {temperature}°
-              </h1>
-              <a
-                href="/"
-                onClick={showCelsius}
-                className="units cel"
-                id="unit-celsius"
-              >
-                C
-              </a>
-              <p className="units">|</p>
-              <a
-                href="/"
-                onClick={showFarenheit}
-                className="units far"
-                id="unit-fahrenheit"
-              >
-                F
-              </a>
+          <div className="row cont-one">
+            <div className="col">
+              <h2 id="current-city-name">{city}</h2>
             </div>
-            <div className="col main-symbol">
-              <p>
-                <span role="img" aria-label="emoji">
-                  ☀️
-                </span>
-              </p>
+            <div className="col">
+              <div className="row">
+                <div className="col deg-area">
+                  <h1 id="main-deg" className="main-deg">
+                    {temperature}°
+                  </h1>
+                  <a
+                    href="/"
+                    onClick={showCelsius}
+                    className="units cel"
+                    id="unit-celsius"
+                  >
+                    C
+                  </a>
+                  <p className="units">|</p>
+                  <a
+                    href="/"
+                    onClick={showFarenheit}
+                    className="units far"
+                    id="unit-fahrenheit"
+                  >
+                    F
+                  </a>
+                </div>
+                <div className="col main-symbol">
+                  <p>
+                    <span role="img" aria-label="emoji">
+                      ☀️
+                    </span>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
