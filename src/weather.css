@@ -1,6 +1,6 @@
-* {
+/* * {
   outline: 1px solid #f00 !important;
-}
+} */
 body {
   font-family: "Poppins", sans-serif;
   text-align: center;
@@ -16,10 +16,17 @@ body {
   background: linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%);
   border-radius: 50%;
 }
+.container {
+  display: grid;
+  margin: 0 auto;
+  justify-items: center;
+  align-items: center;
+}
 .cont-one {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   max-width: 70%;
+  align-items: center;
 }
 .current {
   color: #a68dad;
@@ -59,11 +66,10 @@ h4 {
   font-size: 24px;
   color: #a68dad;
 }
+
 .cont-two {
   display: grid;
-  max-width: 80%;
-  grid-template-columns: repeat(7, 1fr);
-  padding: 30px 10px;
+  max-width: 100%;
 }
 .symbol {
   font-size: 32px;
@@ -75,6 +81,7 @@ h4 {
 .day {
   color: #7d6e83;
   font-size: 16px;
+  text-align: center;
 }
 input {
   color: #a68dad;
@@ -106,11 +113,11 @@ footer {
 @media (max-width: 768px) {
   .circle {
     margin: 5px auto;
-    width: 500px;
-    height: 500px;
+    width: 560px;
+    height: 560px;
   }
   .current {
-    padding: 21px 0 0 0;
+    padding: 32px 0 0 0;
   }
   h2 {
     font-size: 28px;
@@ -127,7 +134,7 @@ footer {
     left: 5px;
   }
   .main-symbol {
-    font-size: 34px;
+    font-size: 44px;
   }
   h4 {
     font-size: 14px;
@@ -138,7 +145,7 @@ footer {
     padding: 15px 5px;
   }
   .symbol {
-    font-size: 16px;
+    font-size: 26px;
   }
   .deg {
     font-size: 12px;
