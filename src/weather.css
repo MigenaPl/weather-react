@@ -141,7 +141,7 @@ footer {
   }
   .cont-two {
     display: grid;
-    max-width: 90%;
+    max-width: 80%;
     padding: 15px 5px;
   }
   .symbol {
