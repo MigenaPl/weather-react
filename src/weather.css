@@ -1,0 +1,94 @@
+body {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  background-color: #f0ece3;
+  line-height: 1.5;
+  zoom: 0.8;
+}
+.circle {
+  display: block;
+  margin: 20px auto;
+  width: 600px;
+  height: 600px;
+  background: linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%);
+  border-radius: 50%;
+}
+.cont-one {
+  display: grid;
+  max-width: 70%;
+}
+.current {
+  color: #a68dad;
+  padding: 42px 0 0 0;
+}
+h2 {
+  font-size: 56px;
+  padding: 2px 0 30px;
+  color: #7d6e83;
+}
+h1,
+.units {
+  color: white;
+  display: inline-flex;
+}
+h1 {
+  font-size: 74px;
+}
+.units {
+  font-size: 25px;
+  position: relative;
+  top: -36px;
+  left: 5px;
+}
+a {
+  color: white;
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+}
+a:hover {
+  color: #a68dad;
+}
+.main-symbol {
+  font-size: 68px;
+}
+h4 {
+  font-size: 24px;
+  color: #a68dad;
+}
+.cont-two {
+  display: grid;
+  max-width: 80%;
+  padding: 30px 10px;
+}
+.symbol {
+  font-size: 32px;
+}
+.deg {
+  color: white;
+  font-size: 12px;
+}
+.day {
+  color: #7d6e83;
+  font-size: 16px;
+}
+input {
+  color: #a68dad;
+  background-color: #f0ece3;
+  border: 1px solid #a68dad;
+  border-radius: 10px;
+  font-size: 14px;
+}
+.location-icon {
+  display: block;
+  margin: 15px auto;
+  background: none;
+  border: none;
+  color: #7d6e83;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  font-family: "Cutive Mono", monospace;
+  color: #967e76;
+}
