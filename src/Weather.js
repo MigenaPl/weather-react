@@ -4,6 +4,8 @@ import "./weather.css";
 
 export default function Weather(props) {
   let [temperature, setTemperature] = useState(props.temperature);
+  let [city, setCity] = useState("");
+
   function showFarenheit(event) {
     event.preventDefault();
     setTemperature(Math.round((props.temperature * 9) / 5 + 32));
@@ -11,6 +13,12 @@ export default function Weather(props) {
   function showCelsius(event) {
     event.preventDefault();
     setTemperature(props.temperature);
+  }
+  function enterSubmit(event) {
+    event.preventDefault();
+  }
+  function updateCity(event) {
+    setCity(event.target.value);
   }
   return (
     <div className="Weather-app">
@@ -21,7 +29,7 @@ export default function Weather(props) {
               Date&Time
             </p>
             <br />
-            <h2 id="current-city-name">City</h2>
+            <h2 id="current-city-name">{city}</h2>
           </div>
           <div className="row">
             <div className="col deg-area">
@@ -128,13 +136,13 @@ export default function Weather(props) {
             <div className="col day">Wed</div>
           </div>
         </div>
-        <form action="/submit" id="search-form">
-          <label for="change"></label>
+        <form onSubmit={enterSubmit} id="search-form">
           <input
-            type="text"
+            type="search"
             name="change"
             id="change-city-input"
             placeholder="Change city"
+            onChange={updateCity}
           />
           <input type="submit" value="Search" />
         </form>
