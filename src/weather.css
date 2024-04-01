@@ -1,10 +1,19 @@
 /* * {
   outline: 1px solid #f00 !important;
 } */
+:root {
+  --col-zero: #ffffff;
+  --col-one: #ffc94a;
+  --col-two: #c08b5c;
+  --col-three: #795458;
+  --col-four: #453f78;
+  --col-bg: #453f78;
+  --col-boh: #967e76;
+}
 body {
   font-family: "Poppins", sans-serif;
   text-align: center;
-  background-color: #f0ece3;
+  background-color: var(--col-bg);
   line-height: 1.5;
   zoom: 0.8;
 }
@@ -13,7 +22,7 @@ body {
   margin: 20px auto;
   width: 600px;
   height: 600px;
-  background: linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%);
+  background: linear-gradient(to top, var(--col-two) 0%, var(--col-three) 100%);
   border-radius: 50%;
 }
 .container {
@@ -29,17 +38,17 @@ body {
   align-items: center;
 }
 .current {
-  color: #a68dad;
+  color: var(--col-one);
   padding: 42px 0 0 0;
 }
 h2 {
   font-size: 56px;
   padding: 2px 0 30px;
-  color: #7d6e83;
+  color: var(--col-four);
 }
 h1,
 .units {
-  color: white;
+  color: var(--col-zero);
   display: inline-flex;
 }
 h1 {
@@ -52,19 +61,19 @@ h1 {
   left: 5px;
 }
 a {
-  color: white;
+  color: var(--col-zero);
   text-decoration: none;
   transition: all 150ms ease-in-out;
 }
 a:hover {
-  color: #a68dad;
+  color: var(--col-one);
 }
 .main-symbol {
   font-size: 68px;
 }
 h4 {
   font-size: 24px;
-  color: #a68dad;
+  color: var(--col-one);
 }
 
 .cont-two {
@@ -75,18 +84,18 @@ h4 {
   font-size: 32px;
 }
 .deg {
-  color: white;
+  color: var(--col-zero);
   font-size: 12px;
 }
 .day {
-  color: #7d6e83;
+  color: var(--col-four);
   font-size: 16px;
   text-align: center;
 }
 input {
-  color: #a68dad;
-  background-color: #f0ece3;
-  border: 1px solid #a68dad;
+  color: var(--col-one);
+  background-color: var(--col-bg);
+  border: 1px solid var(--col-one);
   border-radius: 10px;
   font-size: 14px;
 }
@@ -95,14 +104,14 @@ input {
   margin: 15px auto;
   background: none;
   border: none;
-  color: #7d6e83;
+  color: var(--col-four);
 }
 
 footer {
   text-align: center;
   font-size: 14px;
   font-family: "Cutive Mono", monospace;
-  color: #967e76;
+  color: var(--col-two);
 }
 
 @media (max-width: 1200px) {
