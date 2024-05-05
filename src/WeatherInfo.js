@@ -14,7 +14,7 @@ export default function WeatherInfo(props) {
       </ul>
       <h1>{props.data.city}</h1>
 
-      <div className="row mt-3">
+      <div className="row mt-3 city-info-row">
         <div className="col-3">
           <img src={props.data.icon_url} alt={props.data.description} />
         </div>

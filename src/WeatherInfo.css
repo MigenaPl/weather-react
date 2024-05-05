@@ -9,7 +9,10 @@
   --body-text: "Poppins", sans-serif;
   --footer-text: "Cutive Mono", monospace;
 }
-
+.city-info-row {
+  display: block;
+  margin: 0 auto;
+}
 .temperature {
   font-weight: bold;
   color: var(--col-one);
