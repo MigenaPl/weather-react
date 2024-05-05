@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-import "bootstrap/dist/css/bootstrap.min.css";
 import "./weather.css";
 
 export default function Weather(props) {
