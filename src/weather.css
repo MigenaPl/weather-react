@@ -9,13 +9,16 @@
   --col-four: #453f78;
   --col-bg: #453f78;
   --col-boh: #967e76;
+  --body-text: "Poppins", sans-serif;
+  --footer-text: "Cutive Mono", monospace;
 }
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--body-text);
   text-align: center;
   background-color: var(--col-bg);
   line-height: 1.5;
   zoom: 0.8;
+  color: var(--col-two);
 }
 .circle {
   display: block;
@@ -25,41 +28,22 @@ body {
   background: linear-gradient(to top, var(--col-two) 0%, var(--col-three) 100%);
   border-radius: 50%;
 }
-.container {
-  display: grid;
-  margin: 0 auto;
-  justify-items: center;
-  align-items: center;
+.circle-container {
+  padding: 60px 10px;
 }
-.cont-one {
-  display: grid;
-  grid-template-columns: 1fr;
-  max-width: 70%;
-  align-items: center;
-}
-.current {
+.Weather-app h1 {
   color: var(--col-one);
-  padding: 42px 0 0 0;
+  font-size: 46px;
+  font-weight: 250;
+  margin: 10px 0 0 0;
+  line-height: 1.25;
 }
-h2 {
-  font-size: 56px;
-  padding: 2px 0 30px;
-  color: var(--col-four);
+
+.Weather-app img {
+  height: 60px;
+  display: inline-block;
 }
-h1,
-.units {
-  color: var(--col-zero);
-  display: inline-flex;
-}
-h1 {
-  font-size: 74px;
-}
-.units {
-  font-size: 25px;
-  position: relative;
-  top: -36px;
-  left: 5px;
-}
+
 a {
   color: var(--col-zero);
   text-decoration: none;
@@ -68,49 +52,37 @@ a {
 a:hover {
   color: var(--col-one);
 }
-.main-symbol {
-  font-size: 68px;
-}
-h4 {
-  font-size: 24px;
-  color: var(--col-one);
+.Weather-app form {
+  display: block;
+  margin: 0 auto;
+  justify-content: center;
+  align-content: center;
+  max-width: 50%;
 }
 
-.cont-two {
-  display: grid;
-  max-width: 100%;
-}
-.symbol {
-  font-size: 32px;
-}
-.deg {
-  color: var(--col-zero);
-  font-size: 12px;
-}
-.day {
-  color: var(--col-four);
-  font-size: 16px;
-  text-align: center;
-}
-input {
+.input-branding,
+.btn-branding {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 14px;
   color: var(--col-one);
   background-color: var(--col-bg);
   border: 1px solid var(--col-one);
-  border-radius: 10px;
-  font-size: 14px;
 }
-.location-icon {
-  display: block;
-  margin: 15px auto;
-  background: none;
-  border: none;
-  color: var(--col-four);
+
+.btn-branding:hover {
+  color: var(--col-one);
+  background-color: var(--col-three);
+  border: 1px solid var(--col-one);
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 footer {
   text-align: center;
   font-size: 14px;
-  font-family: "Cutive Mono", monospace;
+  font-family: var(--footer-text);
   color: var(--col-two);
 }
 
@@ -125,49 +97,13 @@ footer {
     width: 560px;
     height: 560px;
   }
-  .current {
-    padding: 32px 0 0 0;
-  }
-  h2 {
-    font-size: 28px;
-    padding: 2px 0 15px;
-  }
 
   h1 {
     font-size: 37px;
   }
-  .units {
-    font-size: 14px;
-    position: relative;
-    top: -18px;
-    left: 5px;
-  }
-  .main-symbol {
-    font-size: 44px;
-  }
-  h4 {
-    font-size: 14px;
-  }
-  .cont-two {
-    display: grid;
-    max-width: 85%;
-    padding: 15px 5px;
-  }
-  .symbol {
-    font-size: 26px;
-  }
-  .deg {
-    font-size: 12px;
-  }
-  .day {
-    font-size: 14px;
-  }
+
   input {
     font-size: 14px;
-  }
-  .location-icon {
-    display: block;
-    margin: 7px auto;
   }
 }
 @media (max-width: 480px) {

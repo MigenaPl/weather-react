@@ -1,0 +1,26 @@
+:root {
+  --col-zero: #ffffff;
+  --col-one: #ffc94a;
+  --col-two: #c08b5c;
+  --col-three: #795458;
+  --col-four: #453f78;
+  --col-bg: #453f78;
+  --col-boh: #967e76;
+  --body-text: "Poppins", sans-serif;
+  --footer-text: "Cutive Mono", monospace;
+}
+.ForecastDay {
+  font-weight: 700;
+  color: var(--col-bg);
+}
+
+.ForecastTemp {
+  padding: 0 3px;
+}
+.ForecastTempMin {
+  color: var(--col-four);
+}
+
+.ForecastTempMax {
+  color: var(--col-one);
+}

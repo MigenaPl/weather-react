@@ -1,0 +1,44 @@
+:root {
+  --col-zero: #ffffff;
+  --col-one: #ffc94a;
+  --col-two: #c08b5c;
+  --col-three: #795458;
+  --col-four: #453f78;
+  --col-bg: #453f78;
+  --col-boh: #967e76;
+  --body-text: "Poppins", sans-serif;
+  --footer-text: "Cutive Mono", monospace;
+}
+.temperature {
+  font-weight: bold;
+  color: var(--col-one);
+  font-size: 54px;
+  line-height: 64px;
+  margin-left: 5px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.unit {
+  color: var(--col-zero);
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  line-height: 1;
+  top: -25px;
+}
+
+.CityInfo {
+  padding: 15px auto;
+  line-height: 1.2;
+  text-align: left;
+}
+
+li {
+  color: var(--col-zero);
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 19px;
+  list-style: none;
+  padding: 10px auto;
+}
