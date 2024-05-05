@@ -9,6 +9,7 @@
   --body-text: "Poppins", sans-serif;
   --footer-text: "Cutive Mono", monospace;
 }
+
 .temperature {
   font-weight: bold;
   color: var(--col-one);
